@@ -1,0 +1,125 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c0466f50-1e4d-4e4c-93d0-dfbeaf30ef76" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dimension DB 5 1</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Date Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8e9c0618-2825-4d75-810d-a87ef982e737">
+          <ID>Date Dim</ID>
+          <Name>Date Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b265d3d8-6525-4b1a-a133-0639fbf9fbbb">
+            <DataSourceViewID>Dimension DB 5</DataSourceViewID>
+            <TableID>dbo_DateDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="487cfc84-a73b-483b-8be7-7ed4452f4ebf">
+          <ID>Fact Dim</ID>
+          <Name>Fact Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="583c1e07-ab1c-4e7f-be8c-6ceb3c84bdd1">
+            <DataSourceViewID>Dimension DB 5</DataSourceViewID>
+            <TableID>dbo_FactDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Mentions Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="362a2588-052e-47e0-ad0c-ae55b949e08e">
+          <ID>Mentions Dim</ID>
+          <Name>Mentions Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7c959f8f-3ea6-47a2-bf8d-d819f87810a7">
+            <DataSourceViewID>Dimension DB 5</DataSourceViewID>
+            <TableID>dbo_MentionsDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Foreign Key Lookup Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cc9142c0-e597-48d9-8be5-2ef23ae4cabd">
+          <ID>Foreign Key Lookup Dim</ID>
+          <Name>Foreign Key Lookup Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="12ec28af-d220-42f2-9700-129841481df5">
+            <DataSourceViewID>Dimension DB 5</DataSourceViewID>
+            <TableID>dbo_ForeignKey_lookupDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Stock Price Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="acc735d8-52d5-44f5-8182-d83f4f301171">
+          <ID>Stock Price Dim</ID>
+          <Name>Stock Price Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ba733e09-acd9-4fa8-be57-6f40043e23dc">
+            <DataSourceViewID>Dimension DB 5</DataSourceViewID>
+            <TableID>dbo_StockPriceDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Tweets Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="35a4a290-c5c4-4eec-af91-b8245f66498e">
+          <ID>Tweets Dim</ID>
+          <Name>Tweets Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dc59fb0a-92c0-4562-a75d-b09aecf10537">
+            <DataSourceViewID>Dimension DB 5</DataSourceViewID>
+            <TableID>dbo_TweetsDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

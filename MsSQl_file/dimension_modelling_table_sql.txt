@@ -1,0 +1,147 @@
+USE [DimensionDB]
+GO
+
+/****** Object:  Table [dbo].[TweetsDim]    Script Date: 21/05/2018 10:50:24 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TweetsDim](
+	[favorited] [varchar](max) NULL,
+	[id] [varchar](max) NULL,
+	[lang] [nvarchar](max) NULL,
+	[retweeted] [varchar](max) NULL,
+	[source] [nvarchar](max) NULL,
+	[text] [nvarchar](max) NULL,
+	[truncated] [varchar](max) NULL,
+	[is_translator] [varchar](max) NULL,
+	[id_user] [varchar](max) NULL,
+	[Tweet_id] [int] NOT NULL,
+	[profile_background_color] [nvarchar](max) NULL,
+	[profile_text_color] [varchar](max) NULL,
+	[profile_link_color] [nvarchar](max) NULL,
+	[verified] [varchar](max) NULL,
+	[profile_image_url_https] [nvarchar](max) NULL,
+	[following] [varchar](max) NULL,
+	[profile_background_image_url_https] [nvarchar](max) NULL,
+	[contributors_enabled] [varchar](max) NULL,
+	[description] [nvarchar](max) NULL,
+ CONSTRAINT [PK_TweetsDim] PRIMARY KEY CLUSTERED 
+(
+	[Tweet_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[StockPriceDim]    Script Date: 21/05/2018 10:50:11 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[StockPriceDim](
+	[id] [int] NOT NULL,
+ CONSTRAINT [PK_StockPriceDim] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[MentionsDim]    Script Date: 21/05/2018 10:50:00 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[MentionsDim](
+	[id] [nvarchar](50) NULL,
+	[title] [nvarchar](max) NULL,
+	[description] [nvarchar](max) NULL,
+	[url] [nvarchar](max) NULL,
+	[language] [nvarchar](max) NULL,
+	[tone] [nvarchar](max) NULL,
+	[source_url] [nvarchar](max) NULL,
+	[Mention_id] [int] NOT NULL,
+	[parent_url] [nvarchar](max) NULL,
+	[source_name] [nvarchar](max) NULL,
+	[direct_reach] [float] NULL,
+ CONSTRAINT [PK_MentionsDim] PRIMARY KEY CLUSTERED 
+(
+	[Mention_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
+/****** Object:  Table [dbo].[FactDim]    Script Date: 21/05/2018 10:49:52 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[FactDim](
+	[Stock_Id] [int] NOT NULL,
+	[Tweet_Id] [int] NOT NULL,
+	[Mentions_Id] [int] NOT NULL,
+	[Open] [float] NULL,
+	[High] [float] NULL,
+	[Low] [float] NULL,
+	[Close] [float] NULL,
+	[Adj Close] [float] NULL,
+	[score] [float] NULL,
+	[retweet_count] [float] NULL,
+	[Date_Id] [int] NOT NULL,
+	[Volume] [float] NULL,
+	[favourite_count] [float] NULL,
+	[direct_reach] [float] NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[FactDim]  WITH CHECK ADD  CONSTRAINT [FK_FactDim_DateDim] FOREIGN KEY([Date_Id])
+REFERENCES [dbo].[DateDim] ([DateSK])
+GO
+
+ALTER TABLE [dbo].[FactDim] CHECK CONSTRAINT [FK_FactDim_DateDim]
+GO
+
+ALTER TABLE [dbo].[FactDim]  WITH CHECK ADD  CONSTRAINT [FK_FactDim_MentionsDim] FOREIGN KEY([Mentions_Id])
+REFERENCES [dbo].[MentionsDim] ([Mention_id])
+GO
+
+ALTER TABLE [dbo].[FactDim] CHECK CONSTRAINT [FK_FactDim_MentionsDim]
+GO
+
+ALTER TABLE [dbo].[FactDim]  WITH CHECK ADD  CONSTRAINT [FK_FactDim_TweetsDim] FOREIGN KEY([Tweet_Id])
+REFERENCES [dbo].[TweetsDim] ([Tweet_id])
+GO
+
+ALTER TABLE [dbo].[FactDim] CHECK CONSTRAINT [FK_FactDim_TweetsDim]
+GO
+
+/****** Object:  Table [dbo].[DateDim]    Script Date: 21/05/2018 10:49:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DateDim](
+	[DateSK] [int] NOT NULL,
+	[Date] [datetime2](7) NOT NULL,
+	[Year] [int] NOT NULL,
+	[Month] [int] NOT NULL,
+	[Day] [int] NOT NULL,
+	[QuarterNumber] [int] NOT NULL,
+ CONSTRAINT [PK_DateDim] PRIMARY KEY CLUSTERED 
+(
+	[DateSK] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+

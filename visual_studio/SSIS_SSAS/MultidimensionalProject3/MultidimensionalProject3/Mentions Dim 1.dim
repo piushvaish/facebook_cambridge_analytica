@@ -1,0 +1,159 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a11ba285-060e-4267-9262-05842a64a006" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Mentions Dim 1</ID>
+  <Name>Mentions Dim 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b5c965bc-54d6-4a5d-b27c-144d4c4776b2">
+    <DataSourceViewID>Dimension DB</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="cfe28d98-7968-4ecf-b761-745db679d8b5">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1a9adfdb-a5fb-47e8-ab76-7b4956f2d40f">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f31f985-ed4f-437d-b7e9-1a10c0ecff38">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="645e30ef-b3f5-4f74-b5f1-e7af7939886e">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d4761b8c-b101-4db4-a2f4-0d5c723ac6e0">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b461cc5b-e90d-4e22-910d-a450cea9a90f">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>date</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c5caaec1-da64-42cf-b213-130c9432e6ba">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6985cbbc-1a7b-4de3-846c-0c3ec62dfa71">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>title</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8ec93fa5-22c4-4830-9e1d-0d9015de02e2">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a6999f9-fe06-47ca-b578-7856dc940b8d">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="15a20e68-102d-4a17-9ddb-dd40e2c35ccf">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23908ff2-c960-48f6-aafd-8ea08d7cc945">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>url</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="eda99e2b-9bae-475d-81b3-ee3dd0d74e54">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c060b7b-1711-45e8-9b54-600880298db0">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>published_at</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="586bc9e3-ec3e-402d-afa7-12e4d71872d0">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64e728f3-3fbe-459b-b9ff-a427d28d2312">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>source_type</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5ea76cf9-ab64-4c90-9a9a-eae7c1452ce8">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2766349a-18bd-48ee-805a-609ead2fba1d">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>language</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="747d0be7-4fce-4cbc-ae63-b846c23f7edc">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1bc55c99-9d8f-40f1-a19f-e87ae0b92960">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>country</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2d1bce2d-3f26-4bc6-918c-cbb37ec78d45">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9523040c-1e8f-489f-a5a8-ed778c345452">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>source_name</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6b4662bd-1093-46a8-a4b2-dd60dbde5d11">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d0fa9ec-8558-4ee5-869a-d9750500a6a3">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>source_url</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="37e25a49-4292-418f-a15a-f460423b4f94">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ff7ec3b-8c09-47a5-9e96-3e443077038b">
+            <TableID>dbo_MentionsDim</TableID>
+            <ColumnID>parent_url</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a085b77a-17d0-4bef-a122-7692c46c6938">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="168c9f59-ca76-4655-b98a-eaa66b370a9c">
+          <TableID>dbo_MentionsDim</TableID>
+          <ColumnID>id</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

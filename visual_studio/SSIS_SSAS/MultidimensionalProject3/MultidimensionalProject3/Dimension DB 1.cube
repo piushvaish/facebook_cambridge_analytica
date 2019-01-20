@@ -1,0 +1,1347 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="94c10fa5-5ef5-4bee-b78f-21db5273a030" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dimension DB 1</ID>
+  <Name>Dimension DB 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="78" scrolltop="-5290" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="97" x="29252" y="15558" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="MentionsDim" left="16427" top="-1790" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3655" height="6637" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000470e0000ed190000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_MentionsDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DateDim" left="217" top="-1833" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3480" height="4947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000980d000053130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DateDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactDim" left="10078" top="-1811" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="5313" height="6811" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000c11400009b1a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TweetsDim" left="4297" top="-1832" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="5029" height="9124" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000a5130000a4230000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_TweetsDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="StockPriceDim" left="20813" top="-1702" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="5138" height="5613" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c000012140000ed150000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_StockPriceDim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>78</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5290</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>217</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1833</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>97</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="06bd7db0-9398-4c6a-9830-20defacbd9ca">
+      <ID>Tweets Dim</ID>
+      <Name>Tweets Dim</Name>
+      <DimensionID>Tweets Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b31010e2-4f60-4be8-b350-1bffd8702c31">
+          <AttributeID>Created At</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e2d045cb-82fe-4939-97c6-9b055489600b">
+      <ID>Tweets Dim 1</ID>
+      <Name>Tweets Dim 1</Name>
+      <DimensionID>Tweets Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3b9425c5-4e78-42f0-9506-3f50ac49c4aa">
+          <AttributeID>Created At</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b888bc82-77d9-4380-8926-53998f007741">
+      <ID>Stock Price Dim</ID>
+      <Name>Stock Price Dim</Name>
+      <DimensionID>Stock Price Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9adeb4e4-faee-434e-bde8-446677c35f4a">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="94c17d7f-96d4-476e-b0cc-84cecfa58b7d">
+      <ID>Stock Price Dim 1</ID>
+      <Name>Stock Price Dim 1</Name>
+      <DimensionID>Stock Price Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="49088d4b-3c72-4790-9f8e-396258d5b839">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b06a4a55-115b-4a83-a8b1-9ecf39011484">
+      <ID>Mentions Dim</ID>
+      <Name>Mentions Dim</Name>
+      <DimensionID>Mentions Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad8a66b9-77cb-485f-ac47-dd7065772b22">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="35f44bfd-107e-421d-aea7-ee23e660c769">
+      <ID>Mentions Dim 1</ID>
+      <Name>Mentions Dim 1</Name>
+      <DimensionID>Mentions Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4eaaf0bf-4b88-4949-86ce-e60a2712d80d">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ae5dc3c9-d15d-4bb1-ba58-c032b5544648">
+      <ID>Fact Dim</ID>
+      <Name>Fact Dim</Name>
+      <DimensionID>Fact Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cd5be9ba-3235-4bc4-bac6-a3f2ea33965a">
+          <AttributeID>Date Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d6dbe76a-272b-4539-8690-1851cb935424">
+      <ID>Fact Dim 1</ID>
+      <Name>Fact Dim 1</Name>
+      <DimensionID>Fact Dim 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5516bec1-f6a4-4bfb-9c93-21f19ae8e971">
+          <AttributeID>Date Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9b70f6b5-d557-4f36-837e-ff8632cc2044">
+      <ID>Date Dim</ID>
+      <Name>Date Dim</Name>
+      <DimensionID>Date Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7aef4a3d-03fb-4f02-977c-580f29934983">
+          <AttributeID>Date SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="fc57bc6b-87a7-41f0-904c-87152347ccc3">
+      <ID>Tweets Dim</ID>
+      <Name>Tweets Dim</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0f907e6c-7b7b-43a7-b363-2979707adb73">
+          <ID>Tweets Dim Count</ID>
+          <Name>Tweets Dim Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b1253382-dd12-4e96-b5b8-6174c2cf4980">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="3240487b-a45d-43e4-a77b-6f001ca529fc">
+              <TableID>dbo_TweetsDim</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="abd488ac-9010-43ed-9055-a7c476b35781">
+          <CubeDimensionID>Tweets Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="82cae638-794b-4fca-a833-01f0142e6823">
+              <AttributeID>Created At</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="841cc10a-c5d8-4612-bcb7-60ce3708fd3f">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="96eb0e90-3b5d-4cb8-a42c-bc0c96caf505">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>created_at</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="7d24d211-b5b1-4741-81d2-7a1fb54c2ad2">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c9a5ab41-2bf5-4247-8d3b-56297b55c93d">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>favorited</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6f2b310a-7618-4c7b-bed3-cc06894bf235">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49d94594-d5c8-4cc2-bc10-ada6357831c5">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="4208eb8c-1167-4e40-a724-f2edeebae596">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="94258e90-1c07-451a-b7d0-c4a70efd0041">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>id_str</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6b11d5f5-4da8-43d3-9ffe-47eabacf9099">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62e317d2-4589-41b5-860e-e7722fc20707">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>is_quote_status</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ca7ee76c-cb9c-4349-b6c4-90e3c3f690fc">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e2f9e7d-5fde-4b55-acca-accf076b1b9a">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>lang</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1b8d1e75-9724-47d0-ae1e-54f71e34e0ee">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="678e5e8e-28e2-4ee4-a899-38c931629af4">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>metadata</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="33ca15e9-8c84-4dac-8534-7ff3961e54c1">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ba1349d-863b-4dca-9101-e0f07c23c010">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>retweeted</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="fc5ca623-352b-4e45-8d94-a1af1dc96560">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dbe5392a-4a63-41e4-ba7e-bf30f93de4e0">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>source</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9b38f03e-79a2-477a-96cf-5b8a6430c935">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4af1dcb4-838a-462a-91e8-9a53865a79c1">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>text</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c6e7798d-8813-41db-83a5-f95a55332416">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8040f9f5-0bf2-41d4-921e-43b9f28f0389">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>truncated</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="87a07523-9dfe-41d7-b05a-62c8350fe648">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="af927f64-56a1-433b-bcfd-d230917f846b">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="55b6c07c-8c67-41b5-9f23-a23bcfef8fb3">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="100f6993-dcb5-4295-8186-107a401b51de">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="bf4fd263-60f3-4840-97b4-36ef4cda1027">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a10c92f4-bc28-4f40-bd46-58c36b9b90c9">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>day</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="17760911-5ccf-48fe-b2ca-11a26881dfbc">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="15285534-7d95-443c-8d3c-e9a69d587ebf">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>hour</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f95c8576-5b30-4d02-b3f3-66677adfbdc2">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04b09e62-28b6-4313-9964-775e6f425089">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>minute</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="eead05f4-3c34-4704-b9fa-1dd9c5266f0f">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d1971bb5-4cc3-4884-ba85-dca5142103cb">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>second</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="fc005d26-d0ac-4a64-a462-b5a2c71c64b3">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d02ff570-0da0-4c97-88bb-3c34349e6fe6">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>language</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="aae4f281-9ed2-47ec-ad85-af8e356047d4">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="69441654-5057-4038-b6ca-7a52138baa9f">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>result_type</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a97e403d-3199-4690-aef9-c89e8f08c890">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e70446b2-fbc5-4b9f-b0cd-72fc415e4589">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>is_translator</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f7adb293-d275-4f37-b98e-1a85cfc9a5fb">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c8d5e17-88d3-4d9e-ae3b-229e19da36eb">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="46dd6da6-36fb-42cb-a626-31ab83baf3c6">
+          <CubeDimensionID>Tweets Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="79edee48-0450-4d1b-95bc-4107e4d7ec98">
+              <AttributeID>Created At</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="989e9d7d-4ed0-464a-a4de-640e55834446">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="16ea8afd-40a7-4e2b-9372-d6652182480d">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>created_at</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="cb27be47-b538-4984-b27a-55c2891fc195">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdb85d02-742e-49bb-a481-e949ee8de718">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>favorited</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="36b8ed13-e090-408c-96d5-b571fcbe1f40">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f8a1e24d-b74e-4cf5-8f02-75c7540819f4">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8569d052-cca8-4822-90bf-3d0e06c8515b">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="97061cb2-e346-4038-89bd-1686cb97a9c9">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>id_str</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="baaa6ee2-73e0-4178-b773-274a241390d5">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e4f7a741-e05f-4713-801c-6b4542af57d7">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>is_quote_status</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="167dd234-d02c-4cf1-a6f3-e40e472597cb">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cd6c39de-294a-4643-8a88-d42199f81e8f">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>lang</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a644e18c-d6a1-4b9c-ae65-e478b8f56a4f">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="09494aa9-6ff7-49c4-aa7f-b598f63f58e3">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>metadata</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f54ed5d2-3cb8-41bf-9d36-322399043f09">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="653cf979-4634-4152-af6f-c06cd359fa10">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>retweeted</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="01900a1a-df98-47ed-8c57-fdcf26b7f34e">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c01159e6-1479-4508-b179-0352e1567789">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>source</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="73ef4a22-8385-4b8b-8f74-58a96c4593d5">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="21aeb1b2-9fa0-4f44-a5dd-004556c1955f">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>text</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="34fc2894-a955-45f2-a573-afa056e5656b">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f9df9abb-c991-403e-886a-f6318cf419d9">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>truncated</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="5ba94c7f-f6e1-4eaf-8650-dad24ffcbd82">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6adcf6c8-4ef4-40f5-aa95-d4d483e02719">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="807f4a03-e8c9-479b-8cda-ffb39057275e">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6d6f5239-9df2-4257-aba5-be1ab7cedb1d">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9a99a3d0-1434-4e82-af0f-41475a58c30d">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ca1003f-f96a-4d62-9566-96ee2d3d7eac">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>day</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1283862e-fbb7-4b93-88ec-fd28560f9625">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ae80e494-22a4-42fd-8ac8-2f98c4dbb1ac">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>hour</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f3768261-93a1-4347-bb13-b1999c6dfb31">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="26b6ae03-1a8d-444e-a8bb-4cda7142f01a">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>minute</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="fa703763-f8ef-4791-9f87-3504e61bea1d">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="143729b2-5897-4ae8-8f87-204fbff10c06">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>second</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="96086e05-0a3e-4df8-98b6-49caa606cb3b">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="46415108-1861-4816-9e5e-da800d832058">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>language</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9981ac20-54b6-4d65-8297-77322d3a6e9a">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="42a186c7-168a-4916-86ed-6319024ff41c">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>result_type</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a7cda83d-729c-42ad-87b9-6835f6db9fbb">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="525e0954-2971-4978-aac4-7f5a70ab05ae">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>is_translator</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="62474acd-2022-4794-90e3-4303e2fc9a9c">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="72c26a7d-a560-4f09-b8a2-953960652ae8">
+                    <TableID>dbo_TweetsDim</TableID>
+                    <ColumnID>Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c3e7b43c-8a90-4f83-8d9f-8652bfe2c551">
+      <ID>Stock Price Dim</ID>
+      <Name>Stock Price Dim</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="75307a82-80e8-4440-8f21-f170d774316e">
+          <ID>Stock Price Dim Count</ID>
+          <Name>Stock Price Dim Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d200c7bb-715f-412f-b823-1a9bf82e70b5">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0a653b04-2709-415c-b81c-0ff391010dad">
+              <TableID>dbo_StockPriceDim</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="46f228d5-baab-47a2-b35e-900ed2007ed3">
+          <CubeDimensionID>Stock Price Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e36c219e-7cc8-4f74-9309-d9b55057f1cb">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="533c8e5e-6d0a-4f5f-a50d-53bd65b5b7d5">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f0c1fa05-e9ea-44ab-93c4-95fcd4b72e8c">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="58ec81cd-2250-452d-9feb-eb605c11ffdd">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="739abece-3f92-4b12-a243-3d1d82710f6c">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f4510830-b5a5-4a06-8b95-63e368c53562">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2e872db-f7a1-40e9-a184-38c845c4ef9e">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="dd2a7526-02f3-48b6-8abd-0c86f56f6a3b">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="055fc846-e04e-447f-98cb-e28e1aa85e8e">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0e92c481-c578-4ed9-a744-b60acf439e0d">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="07d7794b-77fa-4544-9bdb-6dc59ad50ea4">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Day</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6c1b2413-48c7-4549-ae25-9a8ed2fd7b58">
+          <CubeDimensionID>Stock Price Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="697e1c83-43ea-48ce-9fed-2beabb0f1cc6">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="163a60a3-1d41-4462-8b17-e61f276db470">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="82a497c7-be48-467c-8635-24c00e559fa5">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f62274c5-a7de-49c8-91b5-e64ea934afca">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e0353b4-5df9-4053-878a-85a592a026ef">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="3e77eb89-03f8-46bd-a01c-0b666521ed35">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="706ce154-c976-459a-8522-eb4d6ce9baea">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="b104b369-ddb6-46c5-b6c6-55defb027a39">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c7c94253-8f4f-4821-b4e8-10c2e92c8fba">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="4cac5a26-606c-405d-8601-4bc0aa647477">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="071aa0c4-b3a9-4653-8385-c05f5f0cfc49">
+                    <TableID>dbo_StockPriceDim</TableID>
+                    <ColumnID>Day</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="5268dcc3-3c88-483d-b95f-dda046a70d38">
+      <ID>Mentions Dim</ID>
+      <Name>Mentions Dim</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="40be220d-173b-4f3a-812b-a73625ea519b">
+          <ID>Mentions Dim Count</ID>
+          <Name>Mentions Dim Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="06792984-b53f-4f5e-93d3-3c1a572276f1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="160a9473-9fd7-478c-9de0-9ca59105de16">
+              <TableID>dbo_MentionsDim</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c17f580f-002f-4340-b947-a061f6dff668">
+          <CubeDimensionID>Mentions Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fc24ffd8-2f30-4465-aa16-c90668fd23a7">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ad824028-3399-4694-9a35-de640dd78748">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdf3b21d-834b-4421-bafd-89d0a3ea0ae2">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="b2a15961-2547-495a-85fb-907957f767ec">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4562a4a1-bc9a-4608-b39c-6d8fd96ea260">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="82a0d153-2f7a-461a-aaea-faae40067a07">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6e892922-9b80-4ef9-8e4e-fbdf4dbf4013">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>title</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d0a99982-8d32-40fc-879c-df98bf9a8de3">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e4477c17-74a4-437a-9795-c41d26d7e5b6">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>description</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0487849e-551c-4123-a824-56fac0da5d87">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="468f6b28-0054-47bf-a07b-daa362fa21af">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>url</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8932cda1-25cc-40b0-ace7-b0f3b0515928">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="31510e3b-06df-4c64-87a7-500c1f872aba">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>published_at</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="7b1fcb0e-77af-40a6-89ee-5b0897c51ea8">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e1de7e0f-545c-4141-bb0f-ab1084631629">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>source_type</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="4bebae4e-5db2-4eb6-8dda-a8946465c93c">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e99f530e-1208-46a0-8878-d04d2d9e04f1">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>language</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c20e6171-7cf9-4c4d-aa2b-e5f2190950f8">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a01de9df-c30e-4207-bd20-2a70988d19b1">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>country</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="345b0877-d3fa-4d6e-ba98-ed8189208e3f">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f6f4ff3-a0dc-421f-96fe-3466b3114b97">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>source_name</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="32b99e65-ff34-461c-8a16-7bf6354fcef9">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f70f3fe3-4192-4bfa-89e5-49c857b73663">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>source_url</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="5e712423-b8e3-4dfb-9c69-233deb858c5e">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="47a78ed6-dff9-4f3b-a9e2-a1aba6cf3aa0">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>parent_url</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="362b42ff-0ca6-485f-9bfa-48c57bce95cd">
+          <CubeDimensionID>Mentions Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c0a37407-d876-4853-84a5-13bef8b59c40">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cd089703-c748-4f4a-b785-16412376bac1">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ae42fefb-538b-40f8-ad51-9939a788f5f8">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a8ef97c1-1622-4cec-82dd-9904dc9ee305">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="347a1b06-1498-4ce9-a7dc-e2830aa8a489">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0a1fbe2f-9928-4e1e-855a-1950007459cb">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36287e2d-9a5f-46e1-bae1-0cdd0cdf6db3">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>title</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ee1b1334-f381-4e6d-b12d-8159c02511f2">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f0630012-d7dc-4a1d-9e47-707f557621a6">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>description</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="027d4426-1ff9-4b8e-8106-f770d3dcc3a2">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f33e6d23-8e49-4de6-81de-dedcf30094a5">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>url</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e772bd6b-8a5f-49d4-ab39-734f838c8005">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="298fda11-2762-4b47-bc40-cd681413cda7">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>published_at</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="424b1b0f-8ddc-48bf-ac09-8b93c650895c">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bedaf0fe-6041-47f2-9bfc-8f260d73facc">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>source_type</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="39b3cf71-835e-4737-8599-7b88bc88eb62">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cf1c31ef-8d92-47d8-b81b-8bdb68eac440">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>language</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="180947bf-86fb-4ab8-90a7-13ae35c9b7bd">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8263902c-adbc-4527-8abd-9c5426add4a2">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>country</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f7c8cb24-c314-43dd-8eff-5dbede616a97">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3890886b-6499-4be6-9aee-275dff1e9701">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>source_name</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2150e720-80f1-450c-a49d-0234533fc5e8">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="56d72910-0ea2-47ca-b273-318691114449">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>source_url</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="43b896e2-c418-4670-bf0f-e01d68823f7a">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="de941d42-5abd-46b1-aacc-a21bc02a88fd">
+                    <TableID>dbo_MentionsDim</TableID>
+                    <ColumnID>parent_url</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="2f3c7147-49f2-487d-8ee8-18f84febfcd7">
+      <ID>Fact Dim</ID>
+      <Name>Fact Dim</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="87c1ea54-12c6-4137-9510-6352a22baa3a">
+          <ID>Mentions Id</ID>
+          <Name>Mentions Id</Name>
+          <Source dwd:design-time-name="0d5ccc97-67eb-42e8-a308-94e528fd37e5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ae8a9f2f-eed6-4a81-ba0c-20512600829f">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>Mentions_Id</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7026e6d3-8d7f-4dc0-907b-26e7eeae15d4">
+          <ID>Open</ID>
+          <Name>Open</Name>
+          <Source dwd:design-time-name="76d1ef02-dbad-494f-a308-7920325c5f4d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="03c516ab-9bd6-40ec-8797-7aae838d7528">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>Open</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0f976da3-769a-4230-9775-491fc7daeb04">
+          <ID>High</ID>
+          <Name>High</Name>
+          <Source dwd:design-time-name="b7c10948-b1a6-4c79-89b4-6e811ee8d58b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eb0c9f76-3f3d-4f35-8b3e-28635018a66f">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>High</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="593dd960-2026-4109-8a00-276d54cb0ca4">
+          <ID>Low</ID>
+          <Name>Low</Name>
+          <Source dwd:design-time-name="a5595e86-c66e-4d70-952e-ea7dfbb5362b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="83ddb3d6-8201-4b22-9e5b-be091113d6ff">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>Low</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9fc35981-329d-4bf1-b0f3-5a94f003022d">
+          <ID>Close</ID>
+          <Name>Close</Name>
+          <Source dwd:design-time-name="70da7aa4-2b4b-4f8f-802d-6d77ab56fc35">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8df7ec4f-450c-42e2-a460-304e6683df70">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>Close</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0f3504cb-04e0-46a9-9566-1b9d6017c593">
+          <ID>Adj Close</ID>
+          <Name>Adj Close</Name>
+          <Source dwd:design-time-name="23e7a9c5-d801-4df6-a77d-f4eb64e409d6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a254359e-e98b-479b-866b-e205dd86e5c1">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>Adj_x0020_Close</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="586eb1ce-bf59-4138-9bd0-bb6a4db78eb9">
+          <ID>Score</ID>
+          <Name>Score</Name>
+          <Source dwd:design-time-name="29e8497e-e430-4ded-936f-abbf359089d6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b824342-ad95-492f-9877-84d50c6a5cff">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cbfe9637-54c3-4e4e-a2bb-2825b221874a">
+          <ID>Retweet Count</ID>
+          <Name>Retweet Count</Name>
+          <Source dwd:design-time-name="85a600cd-2a76-4148-97da-d794117df9f7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5e95c548-4a3c-4dc0-bc45-bb972321b5ee">
+              <TableID>dbo_FactDim</TableID>
+              <ColumnID>retweet_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0330166d-e15e-4c9e-bb9b-f8832a93fb1c">
+          <ID>Fact Dim Count</ID>
+          <Name>Fact Dim Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ae5213bf-a99c-446b-a884-bfc4382ac5a8">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="cf9c002e-904c-419e-845d-82d5ef6e9ce5">
+              <TableID>dbo_FactDim</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="70e23766-6dc6-4ef5-9fea-e76ed38669f6">
+          <CubeDimensionID>Fact Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="247928b4-8c0d-4cda-8165-08570a840995">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dcb342f5-7846-4e0d-a227-15fa1d537bae">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="849532a6-0473-4f54-ad94-eab249e1a8cd">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Date_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d8cd9c3d-5187-4af9-92fe-c935d17623a0">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3e15830b-3d9c-46f0-a7b0-d7c0653fd547">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Stock_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="becbc19e-4867-461c-9f76-92a4a881049c">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c915118e-3b9d-4595-94f6-d52d54edc7c7">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Tweet_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="272049c6-300e-493c-8e7e-8ee3d6879879">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2e0fa6c8-144a-480c-a070-4f8f40033775">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Mentions_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d27499c2-033b-405c-ae23-82f89729c788">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="88469b9e-af19-4f0b-8473-f7564d5cf55b">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Open</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a1e3d950-f0dd-4a44-96d2-bb007e1be294">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1b64db6a-b6bf-4d88-9eca-75b30f57a863">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>High</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a3a0f5b2-c495-43c3-b885-7ec512038d86">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d4d6d6af-2ee5-4fa3-b1d1-ed393fb60aa7">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Low</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="407a277d-f817-4a57-9e60-7383bc1c05f2">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f54d7a2e-2084-4891-823a-1dfc963f794f">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Close</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="17895b12-e904-4090-bcf7-40640dfe6ec4">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bca87b58-a8b8-4c31-9327-cc9f214b8528">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Adj_x0020_Close</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="633ebfa7-ed05-45db-a852-ec738e606537">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="57dbaf9e-77c1-454d-a5cc-c50cd21f04d0">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>tone</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="23e3187f-6fcd-4e4c-833c-7d2a9a66f603">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9321795e-193e-4089-bbed-f9dbddbc8825">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>score</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8fdff703-e3b8-479f-83bb-0c21bdf79de6">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0ba97d3a-f9e4-4ea6-8639-0da157e7185f">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>retweet_count</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="018af4ee-2553-4b6e-8e12-b6ecba5d0c66">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9439eb58-bd1b-4ccb-8b36-a7f659b9465a">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>language</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="443a0227-a53f-4f7e-83b5-de372d664eae">
+          <CubeDimensionID>Fact Dim 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1a71e1f-3224-46c6-9a4c-b55ebfdc2302">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d379b75c-1bba-4062-b6d6-75861169569e">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3ee3a22b-f44a-4540-8322-86041dfd9bdd">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Date_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f96cdd50-5dcb-4e28-916b-b2e5d529197d">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7a90f293-5526-4871-a1d7-14c60202fd23">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Stock_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="00746fad-d93a-41c3-90ce-132b0c6842d0">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e8b94541-c1dd-49ff-9800-6bd253f96f44">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Tweet_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0594c6ae-f638-4e7a-accc-5adf7f97d674">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="137edc23-7100-4fa8-86e2-d0fc9185e37b">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Mentions_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="600f1c08-3ee4-442d-94c0-0c8a57c3306d">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e213fa98-7c18-4fc4-a704-5a33e5d8172d">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Open</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="0774ddd5-a5b8-45cd-8ebe-dc4da809418a">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c13a51a-94c1-4e8c-897b-4019c8082dc4">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>High</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="56918fa6-afa1-4f62-ac61-4818bad14c38">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d43bc97-538c-4fa1-ad9d-b89a6dc54356">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Low</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="f2e391e9-6be1-4312-a460-f18968eee1ba">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2d211ab7-34ad-42e2-84f2-aceaddccee22">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Close</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="65d50716-0f34-41e8-8ab3-fe261fc1138f">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2dfe17bc-cb1d-4ad7-965f-57327fce0cb3">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>Adj_x0020_Close</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="30d80e2e-1753-4d5d-9a4c-97e4b9965192">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="99567e3b-77bf-450b-aa18-b8696230dc6c">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>tone</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="dabe37a8-09ef-46c0-b0a4-cd94638de350">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c0bf6215-1b26-445b-bd15-26a3c897c077">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>score</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c04a863e-13aa-4d81-ad11-a0173e59b4ed">
+                  <DataType>Double</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5455200b-e411-4d03-975d-8edd458ce2b3">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>retweet_count</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="26188886-8f6a-4849-8f20-c642924522b0">
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="71bf0f33-d45b-4bb5-9f1b-f98099f2c2f5">
+                    <TableID>dbo_FactDim</TableID>
+                    <ColumnID>language</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="96d752d3-d521-4c21-a038-00f9826ca0a3">
+      <ID>Date Dim</ID>
+      <Name>Date Dim</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="014ed7cd-3b7d-409f-90f1-6c4f24671e25">
+          <ID>Date SK</ID>
+          <Name>Date SK</Name>
+          <Source dwd:design-time-name="e0014516-d09f-493b-8c07-9b2e7132b7b9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="93dfc02c-428e-4b41-a9b0-4ab186539486">
+              <TableID>dbo_DateDim</TableID>
+              <ColumnID>DateSK</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="19b613ce-a369-42dc-b662-282ae87b8d6e">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <Source dwd:design-time-name="a08151b4-09ba-47f1-84df-95747aa48b74">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ffb0657a-9ee5-4948-8f72-8a32826c88a1">
+              <TableID>dbo_DateDim</TableID>
+              <ColumnID>Year</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6b7e2446-3c64-4a18-b14b-1825f1c2caea">
+          <ID>Month</ID>
+          <Name>Month</Name>
+          <Source dwd:design-time-name="9133ba4d-d0cf-46be-85e7-1b4fbb2a3988">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e83b7e6c-6645-40bf-b30c-ce1124d46243">
+              <TableID>dbo_DateDim</TableID>
+              <ColumnID>Month</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="653413f7-bf7e-42dc-972c-3a81745f6c79">
+          <ID>Day</ID>
+          <Name>Day</Name>
+          <Source dwd:design-time-name="828df5ae-391f-438e-a685-1d5abf9a754a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="88eb9ea3-7897-4ecb-ad18-0481b771f727">
+              <TableID>dbo_DateDim</TableID>
+              <ColumnID>Day</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e4d438a2-d75b-4727-9d7c-bf064dc1e6a3">
+          <ID>Quarter Number</ID>
+          <Name>Quarter Number</Name>
+          <Source dwd:design-time-name="aee680e6-54b9-4eab-ba3d-301e5c3dc1c6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="064275cb-ec96-4631-8360-6df98ef8a205">
+              <TableID>dbo_DateDim</TableID>
+              <ColumnID>QuarterNumber</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b26a25f1-08c3-4341-a262-249535ee5f1a">
+          <ID>Date Dim Count</ID>
+          <Name>Date Dim Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="af85940c-b27b-4b0f-9b74-a0f513c3169a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="58b0f9ea-f294-4fe1-a17a-ec8573836174">
+              <TableID>dbo_DateDim</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6d265e3f-68ce-4e00-b404-399181c59b7a">
+          <CubeDimensionID>Date Dim</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1c808a6c-790a-4324-87fe-78a9c6f3998f">
+              <AttributeID>Date SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ebee9aff-af19-4369-806b-341b8c2f2602">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d2ddefde-50e5-4663-bb8c-702491020f6a">
+                    <TableID>dbo_DateDim</TableID>
+                    <ColumnID>DateSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1f4e187d-7807-4c9c-ae8e-c91be50ccf4d">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe00c2ad-5195-4629-ba13-37b2657f81fa">
+                    <TableID>dbo_DateDim</TableID>
+                    <ColumnID>Date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="7e1c4288-cc16-42d0-95e3-6b30347a4943">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ee53ee6b-a2b8-4dbc-9f2a-76aa93690836">
+                    <TableID>dbo_DateDim</TableID>
+                    <ColumnID>Year</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="71649da5-00dd-4511-99e4-f0dc99b35080">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5c689a9a-47e0-4f78-9e17-f4d1e9b0c77a">
+                    <TableID>dbo_DateDim</TableID>
+                    <ColumnID>Month</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="73b9885e-53cb-4163-8223-7314782e5410">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="79504847-c5f5-420f-8d2e-9f15555fa056">
+                    <TableID>dbo_DateDim</TableID>
+                    <ColumnID>Day</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2d78562e-92bb-4c50-bec3-616958660944">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="86a80b11-1340-4d9c-9f3f-79fad46e1c94">
+                    <TableID>dbo_DateDim</TableID>
+                    <ColumnID>QuarterNumber</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="570a8620-7092-42b0-be08-763b1c7b19f8">
+    <DataSourceViewID>Dimension DB</DataSourceViewID>
+  </Source>
+</Cube>

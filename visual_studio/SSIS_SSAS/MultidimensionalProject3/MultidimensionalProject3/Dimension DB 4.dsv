@@ -1,0 +1,170 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b9485268-e862-495e-a005-4670732fd69e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dimension DB 4</ID>
+  <Name>Dimension DB 4</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Dimension DB 2 1 1</DataSourceID>
+  <Schema>
+    <xs:schema id="Dimension_x0020_DB_x0020_4" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Dimension_x0020_DB_x0020_4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="29aa2c72-bc27-4501-b56c-e6504fb64e82">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DateDim" msprop:design-time-name="0913e0b1-547e-41b5-b715-9cdc56e007de" msprop:DbTableName="DateDim" msprop:FriendlyName="DateDim" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateSK" msprop:design-time-name="215133d4-0204-44ac-8bda-1f2b15fef0bb" msprop:DbColumnName="DateSK" msprop:FriendlyName="DateSK" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="94bce184-7a11-4179-828a-6305653b734f" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Year" msprop:design-time-name="2f225a62-85c4-491c-8315-ec03e9b9763d" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" />
+                  <xs:element name="Month" msprop:design-time-name="88eb13d3-2705-4aeb-bec3-72c4636ed2e5" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" />
+                  <xs:element name="Day" msprop:design-time-name="ae09d1ee-3a5b-4631-9da4-0acfb3802bb7" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" />
+                  <xs:element name="QuarterNumber" msprop:design-time-name="9c339c9b-502f-41ad-9ea1-08369f81891b" msprop:DbColumnName="QuarterNumber" msprop:FriendlyName="QuarterNumber" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactDim" msprop:design-time-name="0aed7918-bd03-47e1-bacb-ff2acb263038" msprop:DbTableName="FactDim" msprop:FriendlyName="FactDim" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Stock_Id" msprop:design-time-name="44ce0e54-c37c-4f41-984c-2af7416503de" msprop:DbColumnName="Stock_Id" msprop:FriendlyName="Stock_Id" type="xs:string" minOccurs="0" />
+                  <xs:element name="Tweet_Id" msprop:design-time-name="137aa4ba-dae2-4804-8471-b659be9e10bf" msprop:DbColumnName="Tweet_Id" msprop:FriendlyName="Tweet_Id" type="xs:string" minOccurs="0" />
+                  <xs:element name="Mentions_Id" msprop:design-time-name="d9eea848-1698-4629-aee1-cf900227c66e" msprop:DbColumnName="Mentions_Id" msprop:FriendlyName="Mentions_Id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Open" msprop:design-time-name="d3350d60-9f95-4c0d-bff0-33e43b349625" msprop:DbColumnName="Open" msprop:FriendlyName="Open" type="xs:double" minOccurs="0" />
+                  <xs:element name="High" msprop:design-time-name="754fd725-e79d-41ae-a5ed-d6fb79dbcbae" msprop:DbColumnName="High" msprop:FriendlyName="High" type="xs:double" minOccurs="0" />
+                  <xs:element name="Low" msprop:design-time-name="7b3e3fd6-c877-40b8-a89e-a14bb910220d" msprop:DbColumnName="Low" msprop:FriendlyName="Low" type="xs:double" minOccurs="0" />
+                  <xs:element name="Close" msprop:design-time-name="42fd6ca1-4c54-45e3-a393-564dbd75ed9b" msprop:DbColumnName="Close" msprop:FriendlyName="Close" type="xs:double" minOccurs="0" />
+                  <xs:element name="Adj_x0020_Close" msprop:design-time-name="a84bea04-868f-4782-9a89-1d819be0d628" msprop:DbColumnName="Adj Close" msprop:FriendlyName="Adj Close" type="xs:double" minOccurs="0" />
+                  <xs:element name="score" msprop:design-time-name="f6c4a1dc-3875-4232-b907-daea5c520d4f" msprop:DbColumnName="score" msprop:FriendlyName="score" type="xs:double" minOccurs="0" />
+                  <xs:element name="retweet_count" msprop:design-time-name="dd8c24b6-879b-433d-8bd8-2c58d1b15058" msprop:DbColumnName="retweet_count" msprop:FriendlyName="retweet_count" type="xs:double" minOccurs="0" />
+                  <xs:element name="Date_Id" msprop:design-time-name="6c67bd3d-fa8e-4791-be75-f892b5f36f1f" msprop:DbColumnName="Date_Id" msprop:FriendlyName="Date_Id" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Volume" msprop:design-time-name="c30ea194-4621-477e-b526-c4896e2efdf7" msprop:DbColumnName="Volume" msprop:FriendlyName="Volume" type="xs:double" minOccurs="0" />
+                  <xs:element name="language" msprop:design-time-name="67bacf8c-332b-494b-a502-afc51d9861e7" msprop:DbColumnName="language" msprop:FriendlyName="language" type="xs:string" minOccurs="0" />
+                  <xs:element name="favourite_count" msprop:design-time-name="dc792148-fd85-4abd-aed9-b65a7b28a185" msprop:DbColumnName="favourite_count" msprop:FriendlyName="favourite_count" type="xs:double" minOccurs="0" />
+                  <xs:element name="domain_reach" msprop:design-time-name="2d232c7d-ba4a-4e91-9abc-57507e74a872" msprop:DbColumnName="domain_reach" msprop:FriendlyName="domain_reach" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MentionsDim" msprop:design-time-name="677329a4-6d0b-4bad-8ab8-f5690f688ae6" msprop:DbTableName="MentionsDim" msprop:FriendlyName="MentionsDim" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="d7474185-1d0d-44e3-b797-90c5286de9fa" msprop:DbColumnName="id" msprop:FriendlyName="id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="title" msprop:design-time-name="5f5dbeb4-976d-4b61-8eef-13c363f52373" msprop:DbColumnName="title" msprop:FriendlyName="title" type="xs:string" minOccurs="0" />
+                  <xs:element name="description" msprop:design-time-name="79c2d503-981a-48c6-9ee9-5d9c9717ff84" msprop:DbColumnName="description" msprop:FriendlyName="description" type="xs:string" minOccurs="0" />
+                  <xs:element name="url" msprop:design-time-name="e61e2b2d-3651-42cf-afff-b3d45e2017da" msprop:DbColumnName="url" msprop:FriendlyName="url" type="xs:string" minOccurs="0" />
+                  <xs:element name="published_at" msprop:design-time-name="bd91dc4e-f7d2-44c1-9990-fa1d9a342aeb" msprop:DbColumnName="published_at" msprop:FriendlyName="published_at" type="xs:string" minOccurs="0" />
+                  <xs:element name="language" msprop:design-time-name="41601bc7-4464-42bd-8e8a-15375bb9d6bf" msprop:DbColumnName="language" msprop:FriendlyName="language" type="xs:string" minOccurs="0" />
+                  <xs:element name="tone" msprop:design-time-name="93a4bc14-99c5-4a20-b226-9dcc1c3b7d5f" msprop:DbColumnName="tone" msprop:FriendlyName="tone" type="xs:string" minOccurs="0" />
+                  <xs:element name="source_url" msprop:design-time-name="91b59f8b-47ec-4cf5-acd6-6e83ecdd9f92" msprop:DbColumnName="source_url" msprop:FriendlyName="source_url" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MentionUserDim" msprop:design-time-name="8cb6f442-021f-4c94-943f-10378dccde02" msprop:DbTableName="MentionUserDim" msprop:FriendlyName="MentionUserDim" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="source_url" msprop:design-time-name="b131b4ff-1458-4647-9c95-4856ff575fba" msprop:DbColumnName="source_url" msprop:FriendlyName="source_url" type="xs:string" minOccurs="0" />
+                  <xs:element name="parent_url" msprop:design-time-name="2993e716-c676-4135-881a-ea84bb6a0a78" msprop:DbColumnName="parent_url" msprop:FriendlyName="parent_url" type="xs:string" minOccurs="0" />
+                  <xs:element name="source_name" msprop:design-time-name="ccca9883-458e-4426-a12c-391cabd7d044" msprop:DbColumnName="source_name" msprop:FriendlyName="source_name" type="xs:string" minOccurs="0" />
+                  <xs:element name="direct_reach" msprop:design-time-name="e3052fb5-a435-4ed2-b678-070019282911" msprop:DbColumnName="direct_reach" msprop:FriendlyName="direct_reach" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_StockPriceDim" msprop:design-time-name="6ec39b58-9a55-4d89-b0e6-43d3020e2930" msprop:DbTableName="StockPriceDim" msprop:FriendlyName="StockPriceDim" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="7684dace-761d-4705-a6ce-87ba3cc28c1a" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TweetsDim" msprop:design-time-name="da69126d-598e-403f-9035-d562d488e499" msprop:DbTableName="TweetsDim" msprop:FriendlyName="TweetsDim" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="created_at" msprop:design-time-name="38f26e51-44fb-418b-a27e-7cffec5d27a1" msprop:DbColumnName="created_at" msprop:FriendlyName="created_at" type="xs:string" minOccurs="0" />
+                  <xs:element name="favorited" msprop:design-time-name="7858fc96-5ef1-43b8-b7c1-fad98fe73ea5" msprop:DbColumnName="favorited" msprop:FriendlyName="favorited" type="xs:string" minOccurs="0" />
+                  <xs:element name="id" msprop:design-time-name="36f714d5-4074-460b-8417-ccfdfec53af8" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:string" minOccurs="0" />
+                  <xs:element name="id_str" msprop:design-time-name="eacb6176-0faa-4496-a08f-f29f834ddfdc" msprop:DbColumnName="id_str" msprop:FriendlyName="id_str" type="xs:string" minOccurs="0" />
+                  <xs:element name="lang" msprop:design-time-name="c5ffe4ac-19dd-415b-bf7b-d5b96a11d68b" msprop:DbColumnName="lang" msprop:FriendlyName="lang" type="xs:string" minOccurs="0" />
+                  <xs:element name="retweeted" msprop:design-time-name="730db27e-e857-4de9-8d6c-88b2365243c3" msprop:DbColumnName="retweeted" msprop:FriendlyName="retweeted" type="xs:string" minOccurs="0" />
+                  <xs:element name="source" msprop:design-time-name="b386fbe3-ae01-4e3e-b5d5-c5b83b958dcc" msprop:DbColumnName="source" msprop:FriendlyName="source" type="xs:string" minOccurs="0" />
+                  <xs:element name="text" msprop:design-time-name="45096b1f-af17-4b98-832d-20e531ae3e65" msprop:DbColumnName="text" msprop:FriendlyName="text" type="xs:string" minOccurs="0" />
+                  <xs:element name="truncated" msprop:design-time-name="cef7bbca-a563-43ba-8156-4659228ed186" msprop:DbColumnName="truncated" msprop:FriendlyName="truncated" type="xs:string" minOccurs="0" />
+                  <xs:element name="is_translator" msprop:design-time-name="5919d880-b157-4ea2-bbb5-c8a52b2471b6" msprop:DbColumnName="is_translator" msprop:FriendlyName="is_translator" type="xs:string" minOccurs="0" />
+                  <xs:element name="id_user" msprop:design-time-name="ee5af703-2203-44b5-a79d-d335d904e08f" msprop:DbColumnName="id_user" msprop:FriendlyName="id_user" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_UserDim" msprop:design-time-name="70bfdc3b-1164-4be4-ad43-3cc473dcded2" msprop:DbTableName="UserDim" msprop:FriendlyName="UserDim" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_user" msprop:design-time-name="b5e39cf8-4700-4b95-92e4-140c77faedbf" msprop:DbColumnName="id_user" msprop:FriendlyName="id_user" type="xs:string" minOccurs="0" />
+                  <xs:element name="profile_background_img_url" msprop:design-time-name="0bfadd3a-2d87-4c3f-84eb-770f35675f72" msprop:DbColumnName="profile_background_img_url" msprop:FriendlyName="profile_background_img_url" type="xs:string" minOccurs="0" />
+                  <xs:element name="profile_text_color" msprop:design-time-name="5291b1c0-fda6-4e7c-a7cd-fb53c0ad5b1d" msprop:DbColumnName="profile_text_color" msprop:FriendlyName="profile_text_color" type="xs:string" minOccurs="0" />
+                  <xs:element name="profile_link_color" msprop:design-time-name="f2733d1d-018d-46d0-9e73-3cd218708389" msprop:DbColumnName="profile_link_color" msprop:FriendlyName="profile_link_color" type="xs:string" minOccurs="0" />
+                  <xs:element name="verified" msprop:design-time-name="21d24bda-19eb-4014-8ad4-d6094f548401" msprop:DbColumnName="verified" msprop:FriendlyName="verified" type="xs:string" minOccurs="0" />
+                  <xs:element name="profile_image_url_https" msprop:design-time-name="7950019b-fc4e-41f1-86d1-87030f34bb5e" msprop:DbColumnName="profile_image_url_https" msprop:FriendlyName="profile_image_url_https" type="xs:string" minOccurs="0" />
+                  <xs:element name="id_str_user" msprop:design-time-name="3052503b-d8f9-414a-a6ab-2bf4ac1f75db" msprop:DbColumnName="id_str_user" msprop:FriendlyName="id_str_user" type="xs:string" minOccurs="0" />
+                  <xs:element name="following" msprop:design-time-name="135991d8-f80b-4772-b413-6e36b591835e" msprop:DbColumnName="following" msprop:FriendlyName="following" type="xs:string" minOccurs="0" />
+                  <xs:element name="default_profile" msprop:design-time-name="adbd18ac-a863-4dab-b8f7-a2876c32de1b" msprop:DbColumnName="default_profile" msprop:FriendlyName="default_profile" type="xs:string" minOccurs="0" />
+                  <xs:element name="profile_background_image_url_https" msprop:design-time-name="d1c904f1-7a2f-4177-bd78-4ae539bb7cdb" msprop:DbColumnName="profile_background_image_url_https" msprop:FriendlyName="profile_background_image_url_https" type="xs:string" minOccurs="0" />
+                  <xs:element name="description" msprop:design-time-name="35387d8c-97b7-4bf4-8299-6f5bf50adcb5" msprop:DbColumnName="description" msprop:FriendlyName="description" type="xs:string" minOccurs="0" />
+                  <xs:element name="contributors_enabled" msprop:design-time-name="df433ef0-ad57-481c-8a3a-84f5defb17f1" msprop:DbColumnName="contributors_enabled" msprop:FriendlyName="contributors_enabled" type="xs:string" minOccurs="0" />
+                  <xs:element name="statuses_count" msprop:design-time-name="570dd016-227b-4604-8ace-fcfabbb7dd5e" msprop:DbColumnName="statuses_count" msprop:FriendlyName="statuses_count" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Dimension_x0020_DB_x0020_4 xmlns="" />
+  </Schema>
+</DataSourceView>

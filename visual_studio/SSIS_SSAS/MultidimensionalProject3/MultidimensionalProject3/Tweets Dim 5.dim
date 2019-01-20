@@ -1,0 +1,171 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="736e0c8a-99b1-44db-bd5e-b069a5f79b79" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tweets Dim 5</ID>
+  <Name>Tweets Dim 5</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7a5ce568-0bc7-4e3d-8004-d5e23c856074">
+    <DataSourceViewID>Dimension DB 2</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="7d7edaae-cd44-468b-b219-8a2c61f015eb">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="42241c1e-6fe2-4bce-9611-2238c94ce881">
+      <ID>Created At</ID>
+      <Name>Created At</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ff1062fe-e6f9-449e-bd99-903fd04728e3">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ae4c805-f0ed-4a05-bda6-e1c7e75e8683">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>created_at</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9ff3d9ee-6e1b-4628-961e-92389e8b9779">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b947007-3922-428c-8aed-bca2cb6aabff">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>favorited</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8d797ea5-03a1-435e-8ad6-fe4aff850745">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc986662-660d-4b6b-aa86-ba69808321b6">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cd6bcac6-601a-4267-9770-14877f5a606a">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4617039e-1cc0-4c02-8b77-8d185f4e2a4a">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>id_str</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3d39472f-7d8a-4db5-abd7-a94193baf5fe">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0ac81a1-54cb-42f8-b386-3f4f4aa285ab">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>is_quote_status</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5b55d97c-8036-4c86-a759-3613c2f3d0f0">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84cf8acb-c4c8-4041-9ef0-2a13e30bc631">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>lang</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2791ffa2-9461-40ea-9bfa-1dcc541ddfec">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d477e7a3-a9cb-40b3-9eab-6e425772f2dc">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>metadata</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7a2b23fb-9547-4423-a85b-84b1f2c1a6ec">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1956a2e7-dcf9-487c-882e-71d60fb9f14b">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>retweeted</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1c0eb92c-e44d-4bd7-aa35-72c5bd11b3b6">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab67f613-eac7-4fc0-8dc2-a84d5d7e5422">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>source</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7f2a5371-b6d6-49a5-aa76-86a2a1f81bef">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c9bf108d-44c5-446c-b636-c0d8bf901edb">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>text</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4002a798-8192-4dee-a0c2-e4300a37807b">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa1c3f15-0cb9-46d2-ac74-79f618e4249c">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>truncated</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e485c875-555e-48f0-85a9-f50c1c6a512c">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d472027c-cb64-4e1e-a43e-969728056e61">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>language</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3c1b1595-8205-4c86-9800-c8b453ba3a1c">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1272b332-98f3-473e-97a1-3211878d2bcf">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>result_type</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e79e5423-588d-4b06-a49c-31de79abcc7d">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32d88ee3-6c25-4ac5-92db-e5e54931cfd1">
+            <TableID>dbo_TweetsDim</TableID>
+            <ColumnID>is_translator</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="28a8d6ff-52ed-4597-b690-7df34248221d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f3d07144-3983-43c7-ba7d-ef54f9fecf50">
+          <TableID>dbo_TweetsDim</TableID>
+          <ColumnID>created_at</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

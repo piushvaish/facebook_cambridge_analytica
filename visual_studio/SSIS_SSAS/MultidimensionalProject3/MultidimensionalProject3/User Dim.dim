@@ -1,0 +1,178 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="feaeb441-cae5-4d54-8818-a2bc50772d8b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>User Dim</ID>
+  <Name>User Dim</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="454682d6-523c-4137-8bf6-a6a0f4a21ef3">
+    <DataSourceViewID>Dimension DB</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="b8997f16-baa6-4d1b-8062-4a5954036e31">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="edd6bcb6-3b9b-46c5-a8cb-79dc7f27380d">
+      <ID>Id User</ID>
+      <Name>Id User</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23fd78af-0ee5-4be7-ba59-309f381236ba">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1763a3c7-48d3-4292-a59e-65bbe309bd9b">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>id_user</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="afb06690-3a3a-4b85-8cf8-e5e161ca944f">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="afad468e-b2b5-483d-a0f7-16ecc6b3606a">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>profile_background_img_url</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="804188fe-97b1-4667-b870-43aa197171b2">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33075bf4-370c-4f4b-bf3f-0aa590bd7992">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>profile_text_color</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="597c5340-9cf2-4cd2-926b-43e4894f994e">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6852ffd-f631-4ca7-8a74-99778812d8b2">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>profile_link_color</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="97f21a7b-42a9-4409-8e78-c9309b9540dc">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc34c6ef-5620-4c89-adc0-8a62f3610aef">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>verified</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="76b861d7-37b7-4166-b25f-848d0d49c7a2">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20d580af-ff45-433a-aad6-abdc0c4ae99b">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>profile_image_url_https</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cc52ea72-6732-4914-81f3-d0041fc6ec60">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4633d621-1e9e-4e91-8063-62c981ff0a65">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>id_str_user</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cff0c0bf-6abc-4413-be48-8d4672f01a46">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="589f4198-943c-4dc3-97ac-512994a3b6ce">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>following</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7b294b97-3145-4aec-9af6-83afb725acbd">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="493b34d6-14cf-4827-aaab-fa22dbf36eca">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>friends_count</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f936303f-4575-405e-865e-be35ad7217ff">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b01c9fe9-b9e7-43e4-9843-2c2f12fcd10e">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>default_profile</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3bfec8b3-b053-4720-a18d-fe055135abda">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="97972fd8-fdbf-4539-bec7-c27210e9a4ac">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>profile_background_image_url_https</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a42f2e74-4066-44d3-ab90-e1ae25d43893">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e5775a2-b4c3-4030-8c93-3418a5f5b314">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>statuses_count</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fbe0ba42-4277-4187-95c0-820ae6fa6fc6">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33b88d2b-97f5-4faf-85ac-6904f6ed7ab8">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c964e5e7-489e-4604-bf5b-c0fde4087d11">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50c077d8-b57a-4648-af50-e78081895c08">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>contributors_enabled</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fd66e953-06c4-4561-b5ff-137c3dbd7e7a">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51786cda-017f-4b4c-a1c4-bf5d640110ed">
+            <TableID>dbo_UserDim</TableID>
+            <ColumnID>Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9d595cad-d3bc-477c-9fb7-d947215d697d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3f7506f4-32f1-442e-83cc-206938761444">
+          <TableID>dbo_UserDim</TableID>
+          <ColumnID>id_user</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

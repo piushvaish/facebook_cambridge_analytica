@@ -1,0 +1,496 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>14.0.1016.248</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>MultidimensionalProject3.database</Name>
+    <FullPath>MultidimensionalProject3.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>cube.cube</Name>
+      <FullPath>C:\Users\piush\Desktop\cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>cube.partitions</Name>
+          <FullPath>cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 1.cube</Name>
+      <FullPath>Dimension DB 1.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 1.partitions</Name>
+          <FullPath>Dimension DB 1.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 1 1.cube</Name>
+      <FullPath>Dimension DB 1 1.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 1 1.partitions</Name>
+          <FullPath>Dimension DB 1 1.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 1 2.cube</Name>
+      <FullPath>Dimension DB 1 2.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 1 2.partitions</Name>
+          <FullPath>Dimension DB 1 2.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 2.cube</Name>
+      <FullPath>Dimension DB 2.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 2.partitions</Name>
+          <FullPath>Dimension DB 2.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 3.cube</Name>
+      <FullPath>Dimension DB 3.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 3.partitions</Name>
+          <FullPath>Dimension DB 3.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 4.cube</Name>
+      <FullPath>Dimension DB 4.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 4.partitions</Name>
+          <FullPath>Dimension DB 4.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 5.cube</Name>
+      <FullPath>C:\Users\piush\Desktop\Dimension DB 5.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 5.partitions</Name>
+          <FullPath>Dimension DB 5.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 5 1.cube</Name>
+      <FullPath>Dimension DB 5 1.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 5 1.partitions</Name>
+          <FullPath>Dimension DB 5 1.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 6.cube</Name>
+      <FullPath>C:\Users\piush\Desktop\Facebook Data\Dimension DB 6.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Dimension DB 6.partitions</Name>
+          <FullPath>Dimension DB 6.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Fact Dim.dim</Name>
+      <FullPath>Fact Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim.dim</Name>
+      <FullPath>Mentions Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim.dim</Name>
+      <FullPath>Stock Price Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>User Dim.dim</Name>
+      <FullPath>User Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim.dim</Name>
+      <FullPath>Tweets Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 1.dim</Name>
+      <FullPath>Tweets Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 1.dim</Name>
+      <FullPath>Stock Price Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 1.dim</Name>
+      <FullPath>Mentions Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Dim 1.dim</Name>
+      <FullPath>Fact Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim.dim</Name>
+      <FullPath>Date Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 1.dim</Name>
+      <FullPath>Date Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Dim 2.dim</Name>
+      <FullPath>Fact Dim 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 2.dim</Name>
+      <FullPath>Mentions Dim 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 2.dim</Name>
+      <FullPath>Stock Price Dim 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time Dim.dim</Name>
+      <FullPath>Time Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 2.dim</Name>
+      <FullPath>Tweets Dim 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>User Dim 1.dim</Name>
+      <FullPath>User Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 2.dim</Name>
+      <FullPath>Date Dim 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Dim 3.dim</Name>
+      <FullPath>Fact Dim 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 3.dim</Name>
+      <FullPath>Mentions Dim 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 3.dim</Name>
+      <FullPath>Stock Price Dim 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time Dim 1.dim</Name>
+      <FullPath>Time Dim 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 3.dim</Name>
+      <FullPath>Tweets Dim 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 4.dim</Name>
+      <FullPath>Tweets Dim 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time Dim 2.dim</Name>
+      <FullPath>Time Dim 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 4.dim</Name>
+      <FullPath>Stock Price Dim 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 4.dim</Name>
+      <FullPath>Mentions Dim 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Dim 4.dim</Name>
+      <FullPath>Fact Dim 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 3.dim</Name>
+      <FullPath>Date Dim 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 4.dim</Name>
+      <FullPath>Date Dim 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Dim 5.dim</Name>
+      <FullPath>Fact Dim 5.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 5.dim</Name>
+      <FullPath>Mentions Dim 5.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 5.dim</Name>
+      <FullPath>Stock Price Dim 5.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time Dim 3.dim</Name>
+      <FullPath>Time Dim 3.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 5.dim</Name>
+      <FullPath>Tweets Dim 5.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 5.dim</Name>
+      <FullPath>Date Dim 5.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Dim 6.dim</Name>
+      <FullPath>Fact Dim 6.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 6.dim</Name>
+      <FullPath>Mentions Dim 6.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 6.dim</Name>
+      <FullPath>Stock Price Dim 6.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time Dim 4.dim</Name>
+      <FullPath>Time Dim 4.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 6.dim</Name>
+      <FullPath>Tweets Dim 6.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 6.dim</Name>
+      <FullPath>Date Dim 6.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Dim 7.dim</Name>
+      <FullPath>Fact Dim 7.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 7.dim</Name>
+      <FullPath>Mentions Dim 7.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mention User Dim.dim</Name>
+      <FullPath>Mention User Dim.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 7.dim</Name>
+      <FullPath>Stock Price Dim 7.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 7.dim</Name>
+      <FullPath>Tweets Dim 7.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>User Dim 2.dim</Name>
+      <FullPath>User Dim 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 7.dim</Name>
+      <FullPath>Date Dim 7.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 8.dim</Name>
+      <FullPath>Tweets Dim 8.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 8.dim</Name>
+      <FullPath>Mentions Dim 8.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 8.dim</Name>
+      <FullPath>Stock Price Dim 8.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date Dim 8.dim</Name>
+      <FullPath>Date Dim 8.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tweets Dim 9.dim</Name>
+      <FullPath>Tweets Dim 9.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentions Dim 9.dim</Name>
+      <FullPath>Mentions Dim 9.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Price Dim 9.dim</Name>
+      <FullPath>Stock Price Dim 9.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Dimension DB.ds</Name>
+      <FullPath>Dimension DB.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 1.ds</Name>
+      <FullPath>Dimension DB 1.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 2.ds</Name>
+      <FullPath>Dimension DB 2.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 2 1.ds</Name>
+      <FullPath>Dimension DB 2 1.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 2 1 1.ds</Name>
+      <FullPath>Dimension DB 2 1 1.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 3.ds</Name>
+      <FullPath>Dimension DB 3.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 3 1.ds</Name>
+      <FullPath>Dimension DB 3 1.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 3 1 1.ds</Name>
+      <FullPath>Dimension DB 3 1 1.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Dimension DB.dsv</Name>
+      <FullPath>Dimension DB.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 1.dsv</Name>
+      <FullPath>Dimension DB 1.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 2.dsv</Name>
+      <FullPath>Dimension DB 2.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 3.dsv</Name>
+      <FullPath>Dimension DB 3.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 4.dsv</Name>
+      <FullPath>Dimension DB 4.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Star_schema_facebook.dsv</Name>
+      <FullPath>C:\Users\piush\Desktop\Facebook Data\Star_schema_facebook.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 5.dsv</Name>
+      <FullPath>Dimension DB 5.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimension DB 6.dsv</Name>
+      <FullPath>Dimension DB 6.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Dimension DB</Id>
+            <Name>Dimension DB</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 1</Id>
+            <Name>Dimension DB 1</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 2</Id>
+            <Name>Dimension DB 2</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 2 1</Id>
+            <Name>Dimension DB 2 1</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 2 1 1</Id>
+            <Name>Dimension DB 2 1 1</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 3</Id>
+            <Name>Dimension DB 3</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 3 1</Id>
+            <Name>Dimension DB 3 1</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 3 1 1</Id>
+            <Name>Dimension DB 3 1 1</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-P8H8DPJ;Integrated Security=SSPI;Initial Catalog=DimensionDB</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Dimension DB</Id>
+            <Name>Dimension DB</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 1</Id>
+            <Name>Dimension DB 1</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 2</Id>
+            <Name>Dimension DB 2</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 2 1</Id>
+            <Name>Dimension DB 2 1</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 2 1 1</Id>
+            <Name>Dimension DB 2 1 1</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 3</Id>
+            <Name>Dimension DB 3</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 3 1</Id>
+            <Name>Dimension DB 3 1</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Dimension DB 3 1 1</Id>
+            <Name>Dimension DB 3 1 1</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

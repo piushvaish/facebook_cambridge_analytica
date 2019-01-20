@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "BasicFlow", "BasicFlow\BasicFlow.dtproj", "{0C4F97F0-295C-47B1-AE34-7BE3A6EADF6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C4F97F0-295C-47B1-AE34-7BE3A6EADF6F}.Development|Default.ActiveCfg = Development
+		{0C4F97F0-295C-47B1-AE34-7BE3A6EADF6F}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E81D9A22-D899-40A2-92E4-1AAAF966A599}
+	EndGlobalSection
+EndGlobal

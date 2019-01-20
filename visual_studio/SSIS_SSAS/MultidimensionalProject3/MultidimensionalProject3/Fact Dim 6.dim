@@ -1,0 +1,172 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9713c41f-a590-4438-a41e-4bd1a855c5b6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Dim 6</ID>
+  <Name>Fact Dim 6</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c836f253-5faf-4d53-a656-25e166e30f48">
+    <DataSourceViewID>Dimension DB 2</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="9f6d9b03-7167-4fab-bdbe-1fce8116e391">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="39506f0a-c604-4c30-96f7-b89d0b9eb057">
+      <ID>Stock Id</ID>
+      <Name>Stock Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5837ae12-e8cb-4a04-9a40-8dcb08b3b996">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1dd3628-5479-42f0-a86e-ee3f3f521faf">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Stock_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a76ac03f-b8db-4491-87ef-da0b9263f6f6">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="386bcd2f-0728-4297-b76a-15dd8c4aadac">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Tweet_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="bc7a8460-748c-41a7-85e1-cf499acc88e0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b69f4d9-2ce7-4581-b49e-762f1ae78983">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Mentions_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="11dad4f9-bcfd-4623-a8f4-95a04e5b2203">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84051a39-24bb-4b55-9fec-1e968d927850">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Open</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="28dcec97-f36e-4282-bb79-648adf9e1d8d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac248dcb-7563-450f-9602-81360edafebd">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>High</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f3b3ea24-2b06-4417-9720-e5a4a2bb6b95">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b7df089-f02b-4d00-bae2-dd3679206b31">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Low</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="781dba2f-4434-46e3-9cf5-6029f782efb0">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="956ad2db-b897-4e85-a38e-e414d47015c6">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Close</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="112873e0-7afe-4f47-9a94-82b3cf20a429">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbb524dc-1db7-47f2-b68b-2eb01974c401">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Adj_x0020_Close</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="931fed4b-26ff-4bfc-9d29-497cca61d128">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51b7e60b-931e-4691-9642-a11d0a835dc7">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>tone</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="28e5eee9-0f89-4f16-9994-e3953fa2cb4c">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4420b5c7-0394-4eec-814d-987c760ae4fe">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>score</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3d9ae53f-0789-4d11-8f3a-8b766aced0b6">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="077bc681-b6ad-43bc-ad4e-8162ee7bc7a7">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>retweet_count</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cee5331e-7eee-4f5f-a188-7d50c45ec23d">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="36d05556-f849-40cb-80d2-1b8816b525cf">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>language</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f59b1f3d-fc39-4809-ba60-f8fe4a3bc0c1">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9ff6605-101d-4770-88e2-24edc26ad73a">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Time_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="479af4de-bc93-4a4d-b6a2-20b8bf17543e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8e5436c-ffd0-4af4-9278-ad615eeb4e15">
+            <TableID>dbo_FactDim</TableID>
+            <ColumnID>Date_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e2007200-50df-44a0-8b7e-2cf9081f4f14">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e5d3b586-23dd-440e-86ea-f0ae6ec202a7">
+          <TableID>dbo_FactDim</TableID>
+          <ColumnID>Stock_Id</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

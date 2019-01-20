@@ -1,0 +1,31 @@
+#import libraries
+import json
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+import warnings
+
+warnings.filterwarnings('ignore')
+pd.options.display.max_columns = 100
+pd.options.display.max_rows = 100
+
+df = pd.read_csv(r"C:\Users\piush\Desktop\Facebook Data\extra_data\mentions_facebook.csv")
+#check if rows are duplicate
+df[df.duplicated()]
+#there are no duplicates
+#check if there are rows with missing values
+df[df.isnull().any(axis=1)]
+#separate the date into another column
+df['date'] = df['published_at'].apply(lambda x : x.split(" ")[0].replace("-", "/"))
+#delete columns with missing values
+df_small = df[['id','date', 'title', 'description', 'url', 'published_at',
+               'source_type', 'language', 'country', 'tone', 'source_name',
+               'source_url', 'parent_url', 'parent_id', 'direct_reach',
+               'domain_reach', 'score']]
+#save the file as excel
+writer = pd.ExcelWriter('mentions_facebook.xlsx')
+df_small.to_excel(writer,'Sheet1',index=False)
+writer.save()

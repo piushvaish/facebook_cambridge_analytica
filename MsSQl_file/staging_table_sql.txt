@@ -1,0 +1,104 @@
+USE [ProjectDB]
+GO
+
+/****** Object:  Table [dbo].[Mentions]    Script Date: 21/05/2018 10:48:05 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Mentions](
+	[id] [nvarchar](50) NULL,
+	[date] [nvarchar](max) NULL,
+	[title] [nvarchar](max) NULL,
+	[description] [nvarchar](max) NULL,
+	[url] [nvarchar](max) NULL,
+	[published_at] [nvarchar](max) NULL,
+	[source_type] [nvarchar](max) NULL,
+	[language] [nvarchar](max) NULL,
+	[country] [nvarchar](max) NULL,
+	[tone] [nvarchar](max) NULL,
+	[source_name] [nvarchar](max) NULL,
+	[source_url] [nvarchar](max) NULL,
+	[parent_url] [nvarchar](max) NULL,
+	[direct_reach] [float] NULL,
+	[domain_reach] [float] NULL,
+	[score] [float] NULL,
+	[hour] [varchar](max) NULL,
+	[minute] [varchar](max) NULL,
+	[second] [varchar](max) NULL,
+	[Mention_id] [int] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[StockPrice]    Script Date: 21/05/2018 10:47:57 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[StockPrice](
+	[id] [int] NULL,
+	[Date] [nvarchar](max) NULL,
+	[Open] [float] NULL,
+	[High] [float] NULL,
+	[Low] [float] NULL,
+	[Close] [float] NULL,
+	[Adj Close] [float] NULL,
+	[Volume] [float] NULL,
+	[Year] [nvarchar](max) NULL,
+	[Month] [nvarchar](max) NULL,
+	[Day] [nvarchar](max) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+/****** Object:  Table [dbo].[Tweets]    Script Date: 21/05/2018 10:47:44 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Tweets](
+	[created_at] [nvarchar](max) NULL,
+	[favorited] [varchar](max) NULL,
+	[id] [varchar](max) NULL,
+	[id_str] [varchar](max) NULL,
+	[is_quote_status] [varchar](max) NULL,
+	[lang] [nvarchar](max) NULL,
+	[metadata] [nvarchar](max) NULL,
+	[retweet_count] [float] NULL,
+	[retweeted] [varchar](max) NULL,
+	[source] [nvarchar](max) NULL,
+	[text] [nvarchar](max) NULL,
+	[truncated] [varchar](max) NULL,
+	[year] [varchar](max) NULL,
+	[month] [varchar](max) NULL,
+	[day] [varchar](max) NULL,
+	[hour] [varchar](max) NULL,
+	[minute] [varchar](max) NULL,
+	[second] [varchar](max) NULL,
+	[language] [nvarchar](max) NULL,
+	[result_type] [nvarchar](max) NULL,
+	[is_translator] [varchar](max) NULL,
+	[id_user] [varchar](max) NULL,
+	[profile_background_img_url] [nvarchar](max) NULL,
+	[profile_text_color] [varchar](max) NULL,
+	[profile_link_color] [nvarchar](max) NULL,
+	[verified] [varchar](max) NULL,
+	[profile_image_url_https] [nvarchar](max) NULL,
+	[id_str_user] [varchar](max) NULL,
+	[following] [varchar](max) NULL,
+	[friends_count] [varchar](max) NULL,
+	[default_profile] [varchar](max) NULL,
+	[profile_background_image_url_https] [nvarchar](max) NULL,
+	[statuses_count] [varchar](max) NULL,
+	[description] [nvarchar](max) NULL,
+	[contributors_enabled] [varchar](max) NULL,
+	[Date] [nvarchar](max) NULL,
+	[favorite_count] [float] NULL,
+	[Tweet_id] [int] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
